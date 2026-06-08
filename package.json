@@ -1,0 +1,55 @@
+{
+  "name": "@strajkpolski/mcp",
+  "version": "0.1.0",
+  "description": "MCP server dla Strajk Polski — open data o polskiej polityce (budżet, dług, 460 posłów, manifest, 44 skille Poland-Vault) dostępne dla Claude Code, Cursor, Manus, ChatGPT.",
+  "type": "module",
+  "bin": {
+    "strajkpolski-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "anthropic",
+    "polska",
+    "polityka",
+    "open-data",
+    "strajk",
+    "sejm",
+    "budzet"
+  ],
+  "author": "Strajk Polski <kontakt@strajkpolski.org> (https://strajkpolski.org)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hei33enberg/strajkpolski-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hei33enberg/strajkpolski-mcp/issues"
+  },
+  "homepage": "https://strajkpolski.org",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
