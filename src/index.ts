@@ -137,6 +137,22 @@ const TOOLS: Tool[] = [
       "Live licznik uczestników Strajku Polskiego 01.08.2026 (transparentny wzór: 3300 baza + 5..10/min od resetu). Ta sama liczba widoczna na stronach strajkpolski.org i latwogang.shop.",
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
   },
+  {
+    name: "search_cytaty",
+    description:
+      "Cytaty polityków (interpelacje + wystąpienia plenarne + komisje) z weryfikowalnych źródeł sejm.gov.pl. Nightly ingest 04:30 UTC. Filtry: query (full-text PL), topic ('NFZ', 'ZUS', 'Mercosur', 'Ukraina', 'Zielony Ład', 'Inflacja', 'Mieszkaniówka', 'Rolnictwo', etc.), klub (PiS, KO, Konfederacja, PSL, Lewica, Polska2050), posel_id (1..460).",
+    inputSchema: {
+      type: "object",
+      properties: {
+        query: { type: "string", description: "Full-text PL (tsquery, np. 'kredyt 2%')" },
+        topic: { type: "string", description: "Topic (np. 'NFZ', 'ZUS', 'Mercosur')" },
+        klub: { type: "string", description: "Klub posła (np. 'Konfederacja')" },
+        posel_id: { type: "number", description: "ID posła z sejm_mp (1..460)" },
+        limit: { type: "number", description: "Max wyników (1-100, default 20)", default: 20 },
+      },
+      additionalProperties: false,
+    },
+  },
 ];
 
 // ── Tool handlers ──
@@ -150,6 +166,14 @@ const SearchPoslowieSchema = z.object({
 
 const GetPoselSchema = z.object({ id: z.number().min(1).max(999) });
 const GetBudzetPozycjaSchema = z.object({ id: z.string().min(1).max(100) });
+
+const SearchCytatySchema = z.object({
+  query: z.string().max(200).optional(),
+  topic: z.string().max(80).optional(),
+  klub: z.string().max(40).optional(),
+  posel_id: z.number().min(1).max(999).optional(),
+  limit: z.number().min(1).max(100).optional(),
+});
 
 async function callTool(name: string, args: unknown): Promise<unknown> {
   switch (name) {
@@ -188,6 +212,18 @@ async function callTool(name: string, args: unknown): Promise<unknown> {
 
     case "get_strajkujacy":
       return apiFetch("/strajkujacy");
+
+    case "search_cytaty": {
+      const a = SearchCytatySchema.parse(args ?? {});
+      const params = new URLSearchParams();
+      if (a.query) params.set("q", a.query);
+      if (a.topic) params.set("topic", a.topic);
+      if (a.klub) params.set("klub", a.klub);
+      if (a.posel_id) params.set("posel_id", String(a.posel_id));
+      if (a.limit) params.set("limit", String(a.limit));
+      const q = params.toString() ? `?${params.toString()}` : "";
+      return apiFetch(`/cytaty${q}`);
+    }
 
     default:
       throw new Error(`Unknown tool: ${name}`);
