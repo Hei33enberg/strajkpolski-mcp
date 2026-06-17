@@ -1,6 +1,6 @@
 {
   "name": "@strajkpolski/mcp",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "MCP server dla Strajk Polski — open data o polskiej polityce (budżet, dług, 460 posłów, manifest, 44 skille Poland-Vault) dostępne dla Claude Code, Cursor, Manus, ChatGPT.",
   "type": "module",
   "bin": {
@@ -18,8 +18,17 @@
     "dev": "tsx src/index.ts",
     "prepublishOnly": "npm run build"
   },
+  "mcp": {
+    "name": "strajkpolski",
+    "description": "Polish open data: national debt, budget, 460 MPs, 9 demands of the National Strike, 44 Poland-Vault skills",
+    "categories": ["open-data", "government", "poland", "politics", "economics"],
+    "tools": 8,
+    "transport": "stdio",
+    "language": "pl"
+  },
   "keywords": [
     "mcp",
+    "mcp-server",
     "model-context-protocol",
     "claude",
     "cursor",
@@ -29,7 +38,10 @@
     "open-data",
     "strajk",
     "sejm",
-    "budzet"
+    "budzet",
+    "poland",
+    "government",
+    "economics"
   ],
   "author": "Strajk Polski <kontakt@strajkpolski.org> (https://strajkpolski.org)",
   "license": "MIT",

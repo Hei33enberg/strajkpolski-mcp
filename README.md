@@ -1,5 +1,10 @@
 # `@strajkpolski/mcp`
 
+[![npm version](https://img.shields.io/npm/v/@strajkpolski/mcp)](https://www.npmjs.com/package/@strajkpolski/mcp)
+[![license](https://img.shields.io/npm/l/@strajkpolski/mcp)](https://github.com/Hei33enberg/strajkpolski-mcp/blob/main/LICENSE)
+[![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
+[![tools](https://img.shields.io/badge/tools-8-green)]()
+
 > **MCP server** dla open data Strajku Polskiego — dług publiczny, budżet, 460 posłów Sejmu RP, manifest 9 postulatów, 44 skille Poland-Vault.
 > Free. Bez auth. Rate-limit 1000/h per IP.
 
