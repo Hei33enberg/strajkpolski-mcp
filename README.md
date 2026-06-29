@@ -91,10 +91,9 @@ Wszystkie **read-only**, bez klucza, bez trackingu. Rate-limit 1000/h/IP.
 
 ## 📚 Skille / Skills (Poland-Vault)
 
-Do narzędzi MCP dołączamy **44 skille bilingual (PL+EN)** — gotowe „fact-packi" o polskim państwie: budżet, dług, 460 posłów (emaile/kluby), 100 senatorów, 20 ministerstw, NFZ, ZUS, podatki, mObywatel, samorząd, IMGW, GIOŚ, sądy, policja, media publiczne i in. Każdy z linkami do gov.pl. Licencja MIT — bierz, remiksuj, cytuj.
-*(Skille są obecnie w repo [Poland-Vault](https://github.com/Hei33enberg/Poland-Vault); trwa konsolidacja do tego repozytorium pod jedną marką „Strajk Polski".)*
+W katalogu [`skills/`](./skills) tego repo znajdziesz **44 skille bilingual (PL+EN)** — gotowe „fact-packi" o polskim państwie: budżet, dług, 460 posłów (emaile/kluby), 100 senatorów, 20 ministerstw, NFZ, ZUS, podatki, mObywatel, samorząd, IMGW, GIOŚ, sądy, policja, media publiczne i in. Każdy z linkami do gov.pl. Licencja MIT — bierz, remiksuj, cytuj. *(Dawniej osobne repo Poland-Vault — skonsolidowane tutaj pod jedną marką „Strajk Polski".)*
 
-We ship **44 bilingual (PL+EN) skills** — ready fact-packs about the Polish state, each linked to official gov sources. MIT — take, remix, cite. *(Currently in [Poland-Vault](https://github.com/Hei33enberg/Poland-Vault); being consolidated into this repo under one "Strajk Polski" brand.)*
+The [`skills/`](./skills) folder ships **44 bilingual (PL+EN) skills** — ready fact-packs about the Polish state, each linked to official gov sources. MIT — take, remix, cite. *(Formerly the standalone Poland-Vault repo — now consolidated here under one "Strajk Polski" brand.)*
 
 ## 🌍 Wizja / Vision — CivicVault
 
