@@ -1,0 +1,20 @@
+# Smithery config — https://smithery.ai/docs
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      STRAJKPOLSKI_API_BASE:
+        type: string
+        title: API base URL
+        default: https://strajkpolski.org/api
+        description: Override API base URL (self-host / testing). Leave default for the public API.
+    required: []
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@strajkpolski/mcp'],
+      env: config.STRAJKPOLSKI_API_BASE
+        ? { STRAJKPOLSKI_API_BASE: config.STRAJKPOLSKI_API_BASE }
+        : {}
+    })

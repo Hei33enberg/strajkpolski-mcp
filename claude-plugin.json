@@ -1,0 +1,15 @@
+{
+  "name": "strajkpolski-mcp",
+  "displayName": "Strajk Polski — Polish open data (debt, budget, MPs, votings)",
+  "version": "0.3.0",
+  "description": "Verified open data about Poland for AI agents: national debt, state budget, 460 Sejm MPs, votings & voting alignment, politician quotes, government map + payroll cost, semantic RAG search. Free, MIT, sourced to gov.pl/sejm.gov.pl.",
+  "homepage": "https://strajkpolski.org",
+  "categories": ["open-data", "government", "poland", "politics", "economics"],
+  "keywords": ["poland", "polska", "sejm", "budget", "debt", "votings", "politics", "open-data", "rag"],
+  "mcpServers": {
+    "strajkpolski": {
+      "command": "npx",
+      "args": ["-y", "@strajkpolski/mcp"]
+    }
+  }
+}

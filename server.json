@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "org.strajkpolski/strajkpolski-mcp",
+  "description": "Verified Polish open data for AI agents: national debt, state budget, 460 Sejm MPs, votings & voting alignment, politician quotes, government map + payroll cost, semantic RAG search. Free, no key, sourced to gov.pl.",
+  "version": "0.3.0",
+  "repository": {
+    "url": "https://github.com/Hei33enberg/strajkpolski-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://strajkpolski.org",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@strajkpolski/mcp",
+      "version": "0.3.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "STRAJKPOLSKI_API_BASE",
+          "description": "Override API base URL (self-host / testing)",
+          "isRequired": false,
+          "default": "https://strajkpolski.org/api"
+        }
+      ]
+    }
+  ]
+}

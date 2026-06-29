@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "strajkpolski": {
+      "command": "npx",
+      "args": ["-y", "@strajkpolski/mcp"]
+    }
+  }
+}
