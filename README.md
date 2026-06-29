@@ -65,7 +65,10 @@ Because **the future of search is AI agents.** When someone asks ChatGPT / Claud
 }
 ```
 
-Wersja przypięta / pinned: `["-y", "@strajkpolski/mcp@0.3.0"]`. Bez instalacji / no install: REST pod `https://strajkpolski.org/api/`. Pełny kontekst dla LLM / full LLM context: `https://strajkpolski.org/llms.txt`.
+Wersja przypięta / pinned: `["-y", "@strajkpolski/mcp@0.3.3"]`. Bez instalacji / no install: REST pod `https://strajkpolski.org/api/`. Pełny kontekst dla LLM / full LLM context: `https://strajkpolski.org/llms.txt`.
+
+### Remote MCP — ChatGPT connectors · Claude.ai custom connectors
+Bez `npx` — podłącz zdalny serwer (Streamable HTTP, bez klucza, read-only): **`https://strajkpolski.org/api/mcp`**. Wklej ten URL w ChatGPT (Connectors) lub Claude.ai (Custom connectors). / Paste this URL into ChatGPT Connectors or Claude.ai Custom connectors — no auth, 15 tools.
 
 ## 15 narzędzi / 15 tools
 

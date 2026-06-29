@@ -8,6 +8,9 @@
     "source": "github"
   },
   "websiteUrl": "https://strajkpolski.org",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://strajkpolski.org/api/mcp" }
+  ],
   "packages": [
     {
       "registryType": "npm",
