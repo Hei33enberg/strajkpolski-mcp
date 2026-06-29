@@ -1,6 +1,6 @@
 {
   "name": "@strajkpolski/mcp",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "MCP server dla Strajk Polski — zweryfikowane open data o polityce RP: dług publiczny, budżet państwa, 460 posłów Sejmu, głosowania, cytaty polityków, mapa rządu + koszt, semantyczny search korpusu, manifest, 44 skille Poland-Vault. 15 narzędzi dla Claude, Cursor, Manus, ChatGPT. Źródła: gov.pl/sejm.gov.pl.",
   "type": "module",
   "bin": {
@@ -21,7 +21,13 @@
   "mcp": {
     "name": "strajkpolski",
     "description": "Polish open data: national debt, state budget, 460 MPs, Sejm votings, politician quotes, government map + cost, semantic knowledge search, 9 National Strike demands, 44 Poland-Vault skills",
-    "categories": ["open-data", "government", "poland", "politics", "economics"],
+    "categories": [
+      "open-data",
+      "government",
+      "poland",
+      "politics",
+      "economics"
+    ],
     "tools": 15,
     "transport": "stdio",
     "language": "pl"
