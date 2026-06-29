@@ -16,8 +16,8 @@ jobs:
         run: |
           curl -sL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_amd64.tar.gz" \
             | tar xz mcp-publisher
-          sudo mv mcp-publisher /usr/local/bin/ || mv mcp-publisher ./mcp-publisher
+          sudo mv mcp-publisher /usr/local/bin/
       - name: Login (GitHub OIDC) & publish server.json
         run: |
-          (mcp-publisher login github-oidc || ./mcp-publisher login github-oidc)
-          (mcp-publisher publish || ./mcp-publisher publish)
+          mcp-publisher login github-oidc
+          mcp-publisher publish

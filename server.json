@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
-  "name": "io.github.hei33enberg/strajkpolski-mcp",
+  "name": "io.github.Hei33enberg/strajkpolski-mcp",
   "description": "Verified Polish open data for AI agents: debt, budget, 460 MPs, votings, quotes, gov map, RAG.",
   "version": "0.3.2",
   "repository": {
