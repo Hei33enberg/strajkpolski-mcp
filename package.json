@@ -1,6 +1,6 @@
 {
   "name": "@strajkpolski/mcp",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "mcpName": "io.github.Hei33enberg/strajkpolski-mcp",
   "description": "MCP server dla Strajk Polski — zweryfikowane open data o polityce RP: dług publiczny, budżet państwa, 460 posłów Sejmu, głosowania, cytaty polityków, mapa rządu + koszt, semantyczny search korpusu, manifest, 44 skille Poland-Vault. 15 narzędzi dla Claude, Cursor, Manus, ChatGPT. Źródła: gov.pl/sejm.gov.pl.",
   "type": "module",
