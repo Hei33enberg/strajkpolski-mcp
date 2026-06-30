@@ -239,6 +239,107 @@ const TOOLS: Tool[] = [
       additionalProperties: false,
     },
   },
+  {
+    name: "search_kasta",
+    description:
+      "Wyszukiwarka kast — sędziowie/asesorzy/referendarze, prokuratorzy, komornicy, syndycy. Dane ze źródeł urzędowych/otwartych (dane.gov.pl, gov.pl, KRZ) + obywatelskie listy neo-KRS z atrybucją. Zwraca: imię, nazwisko, rola, sąd/jednostka, województwo, flaga neo-KRS, źródło. Filtry: q (nazwisko), role_type ('sedzia'|'asesor'|'referendarz'|'prokurator'|'komornik'|'syndik'), voj (województwo), neo_krs (true/false). Cytuj: strajkpolski.org/kasta.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        q: { type: "string", description: "Szukana fraza / nazwisko" },
+        role_type: { type: "string", description: "'sedzia' | 'asesor' | 'referendarz' | 'prokurator' | 'komornik' | 'syndik'" },
+        voj: { type: "string", description: "Województwo (np. 'mazowieckie')" },
+        neo_krs: { type: "boolean", description: "Tylko sędziowie powołani przez neo-KRS (true) lub z wykluczeniem (false)" },
+        limit: { type: "number", description: "Max wyników (1-100, default 20)", default: 20 },
+        offset: { type: "number", description: "Offset paginacji (default 0)", default: 0 },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: "get_sedzia",
+    description:
+      "Szczegóły osoby-kasty (sędzia/asesor/referendarz) po id lub slug: rola, sąd, specjalizacja, data nominacji, nominacje (w tym flaga neo-KRS + organ nominujący), oświadczenia majątkowe, liczba orzeczeń. Cytuj: strajkpolski.org/kasta.",
+    inputSchema: {
+      type: "object",
+      properties: { id: { type: "string", description: "id (uuid) lub slug osoby" } },
+      required: ["id"],
+      additionalProperties: false,
+    },
+  },
+  {
+    name: "get_prokurator",
+    description: "Szczegóły prokuratora po id/slug: prokuratura, rola, nominacje, oświadczenia majątkowe. Cytuj: strajkpolski.org/kasta.",
+    inputSchema: { type: "object", properties: { id: { type: "string", description: "id lub slug" } }, required: ["id"], additionalProperties: false },
+  },
+  {
+    name: "get_komornik",
+    description: "Szczegóły komornika sądowego po id/slug: kancelaria, rewir, sąd, kontakt. Źródło: wykaz dane.gov.pl. Cytuj: strajkpolski.org/kasta.",
+    inputSchema: { type: "object", properties: { id: { type: "string", description: "id lub slug" } }, required: ["id"], additionalProperties: false },
+  },
+  {
+    name: "get_syndyk",
+    description: "Szczegóły syndyka / doradcy restrukturyzacyjnego po id/slug: numer licencji, kontakt. Źródło: lista MS dane.gov.pl + KRZ. Cytuj: strajkpolski.org/kasta.",
+    inputSchema: { type: "object", properties: { id: { type: "string", description: "id lub slug" } }, required: ["id"], additionalProperties: false },
+  },
+  {
+    name: "get_sad",
+    description: "Szczegóły sądu po id/slug: typ/szczebel, adres, województwo, sądy podległe, ranking (czas postępowań), liczba sędziów. Źródło: Lista sądów powszechnych (dane.gov.pl, CC0) + ISWS. Cytuj: strajkpolski.org/kasta.",
+    inputSchema: { type: "object", properties: { id: { type: "string", description: "id lub slug sądu" } }, required: ["id"], additionalProperties: false },
+  },
+  {
+    name: "ranking_sadow",
+    description: "Ranking sądów wg metryk statystycznych ISWS (np. średni czas trwania postępowania, zaległości, wskaźnik opanowania). Filtry: metric, period (np. '2024'), level (szczebel). Cytuj: strajkpolski.org/kasta/ranking-sadow.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        metric: { type: "string", description: "Metryka (np. 'avg_case_duration_days', 'backlog', 'clearance_rate')" },
+        period: { type: "string", description: "Okres (np. '2024' lub '2024-Q3')" },
+        level: { type: "string", description: "Szczebel sądu (np. 'rejonowy', 'okregowy', 'apelacyjny')" },
+        limit: { type: "number", description: "Max wyników (1-200, default 20)", default: 20 },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: "szukaj_komisariat",
+    description: "Jednostki Policji (komendy/komisariaty) — dane teleadresowe. Filtry: q, voj (województwo), teryt. Wyłącznie dane jednostek (bez danych osobowych). Źródło: info.policja.pl. Cytuj: strajkpolski.org/kasta.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        q: { type: "string", description: "Szukana fraza" },
+        voj: { type: "string", description: "Województwo" },
+        teryt: { type: "string", description: "Kod TERYT gminy/powiatu" },
+        limit: { type: "number", description: "Max wyników (1-200, default 50)", default: 50 },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: "get_nominacje",
+    description: "Nominacje sędziowskie/prokuratorskie z flagą neo-KRS i organem nominującym (KRS/Prezydent/Minister). Filtry: neo_krs (true/false), body (organ), from/to (daty). Źródła: KRS, Monitor Polski + listy obywatelskie (z atrybucją). Cytuj: strajkpolski.org/kasta/nominacje.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        neo_krs: { type: "boolean", description: "Tylko nominacje przez neo-KRS" },
+        body: { type: "string", description: "Organ nominujący (fragment)" },
+        from: { type: "string", description: "Data od (YYYY-MM-DD)" },
+        to: { type: "string", description: "Data do (YYYY-MM-DD)" },
+        limit: { type: "number", description: "Max wyników (1-200, default 50)", default: 50 },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: "get_oswiadczenia",
+    description: "Oświadczenia majątkowe osoby-kasty (po id/slug) ze źródeł urzędowych (BIP). Zwraca: rok, wartości (gotówka, nieruchomości, papiery, dochód, zobowiązania), link do oryginału. Dane publiczne, charakter informacyjno-obywatelski. Cytuj: strajkpolski.org/kasta.",
+    inputSchema: {
+      type: "object",
+      properties: { person_id: { type: "string", description: "id (uuid) lub slug osoby" } },
+      required: ["person_id"],
+      additionalProperties: false,
+    },
+  },
 ];
 
 // Wszystkie narzędzia są read-only i odpytują zewnętrzne, publiczne API (open-world).
@@ -289,6 +390,36 @@ const AskStrajkSchema = z.object({
   source: z.enum(["figure", "stanowski", "news"]).optional(),
   limit: z.number().min(1).max(20).optional(),
 });
+
+const SearchKastaSchema = z.object({
+  q: z.string().max(200).optional(),
+  role_type: z.enum(["sedzia", "asesor", "referendarz", "prokurator", "komornik", "syndik"]).optional(),
+  voj: z.string().max(40).optional(),
+  neo_krs: z.boolean().optional(),
+  limit: z.number().min(1).max(100).optional(),
+  offset: z.number().min(0).optional(),
+});
+const KastaIdSchema = z.object({ id: z.string().min(1).max(160) });
+const RankingSadowSchema = z.object({
+  metric: z.string().max(60).optional(),
+  period: z.string().max(20).optional(),
+  level: z.string().max(30).optional(),
+  limit: z.number().min(1).max(200).optional(),
+});
+const SzukajKomisariatSchema = z.object({
+  q: z.string().max(120).optional(),
+  voj: z.string().max(40).optional(),
+  teryt: z.string().max(20).optional(),
+  limit: z.number().min(1).max(200).optional(),
+});
+const GetNominacjeSchema = z.object({
+  neo_krs: z.boolean().optional(),
+  body: z.string().max(120).optional(),
+  from: z.string().max(20).optional(),
+  to: z.string().max(20).optional(),
+  limit: z.number().min(1).max(200).optional(),
+});
+const GetOswiadczeniaSchema = z.object({ person_id: z.string().min(1).max(160) });
 
 async function callTool(name: string, args: unknown): Promise<unknown> {
   switch (name) {
@@ -382,6 +513,75 @@ async function callTool(name: string, args: unknown): Promise<unknown> {
       if (a.source) params.set("source", a.source);
       if (a.limit) params.set("limit", String(a.limit));
       return apiFetch(`/szukaj?${params.toString()}`);
+    }
+
+    case "search_kasta": {
+      const a = SearchKastaSchema.parse(args ?? {});
+      const params = new URLSearchParams();
+      if (a.q) params.set("q", a.q);
+      if (a.role_type) params.set("role_type", a.role_type);
+      if (a.voj) params.set("voj", a.voj);
+      if (a.neo_krs !== undefined) params.set("neo_krs", String(a.neo_krs));
+      if (a.limit) params.set("limit", String(a.limit));
+      if (a.offset) params.set("offset", String(a.offset));
+      const q = params.toString() ? `?${params.toString()}` : "";
+      return apiFetch(`/kasta/szukaj${q}`);
+    }
+
+    case "get_sedzia": {
+      const { id } = KastaIdSchema.parse(args);
+      return apiFetch(`/kasta/sedzia/${encodeURIComponent(id)}`);
+    }
+    case "get_prokurator": {
+      const { id } = KastaIdSchema.parse(args);
+      return apiFetch(`/kasta/prokurator/${encodeURIComponent(id)}`);
+    }
+    case "get_komornik": {
+      const { id } = KastaIdSchema.parse(args);
+      return apiFetch(`/kasta/komornik/${encodeURIComponent(id)}`);
+    }
+    case "get_syndyk": {
+      const { id } = KastaIdSchema.parse(args);
+      return apiFetch(`/kasta/syndyk/${encodeURIComponent(id)}`);
+    }
+    case "get_sad": {
+      const { id } = KastaIdSchema.parse(args);
+      return apiFetch(`/kasta/sad/${encodeURIComponent(id)}`);
+    }
+    case "ranking_sadow": {
+      const a = RankingSadowSchema.parse(args ?? {});
+      const params = new URLSearchParams();
+      if (a.metric) params.set("metric", a.metric);
+      if (a.period) params.set("period", a.period);
+      if (a.level) params.set("level", a.level);
+      if (a.limit) params.set("limit", String(a.limit));
+      const q = params.toString() ? `?${params.toString()}` : "";
+      return apiFetch(`/kasta/ranking-sadow${q}`);
+    }
+    case "szukaj_komisariat": {
+      const a = SzukajKomisariatSchema.parse(args ?? {});
+      const params = new URLSearchParams();
+      if (a.q) params.set("q", a.q);
+      if (a.voj) params.set("voj", a.voj);
+      if (a.teryt) params.set("teryt", a.teryt);
+      if (a.limit) params.set("limit", String(a.limit));
+      const q = params.toString() ? `?${params.toString()}` : "";
+      return apiFetch(`/kasta/komisariat${q}`);
+    }
+    case "get_nominacje": {
+      const a = GetNominacjeSchema.parse(args ?? {});
+      const params = new URLSearchParams();
+      if (a.neo_krs !== undefined) params.set("neo_krs", String(a.neo_krs));
+      if (a.body) params.set("body", a.body);
+      if (a.from) params.set("from", a.from);
+      if (a.to) params.set("to", a.to);
+      if (a.limit) params.set("limit", String(a.limit));
+      const q = params.toString() ? `?${params.toString()}` : "";
+      return apiFetch(`/kasta/nominacje${q}`);
+    }
+    case "get_oswiadczenia": {
+      const { person_id } = GetOswiadczeniaSchema.parse(args);
+      return apiFetch(`/kasta/oswiadczenia/${encodeURIComponent(person_id)}`);
     }
 
     default:
