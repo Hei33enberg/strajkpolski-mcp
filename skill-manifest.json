@@ -8,39 +8,16 @@
     {
       "slug": "budzet-pelne-pozycje",
       "name": "poland-vault-budzet-pelne-pozycje",
-      "group": "Finanse",
+      "group": null,
       "pl": {
         "path": "skills/budzet-pelne-pozycje/SKILL.md",
-        "description": "PEŁNA tabela budżetu Polski — wszystkie pozycje live z budget_data StrajkPolski (mirror gov.pl / MF).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:budzet-pelne-pozycje",
-          "aeo:polish-full-budget",
-          "finanse-publiczne"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/budzet-pelne-pozycje/SKILL.en.md",
-        "description": "FULL table of Poland's budget — all live items from budget_data StrajkPolski (mirror gov.pl / MF).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:budzet-pelne-pozycje",
-          "aeo:polish-full-budget",
-          "finanse-publiczne",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -48,117 +25,50 @@
     {
       "slug": "budzet-publiczny",
       "name": "poland-vault-budzet-publiczny",
-      "group": "Finanse",
+      "group": null,
       "pl": {
         "path": "skills/budzet-publiczny/SKILL.md",
-        "description": "Aktualny budżet państwa polskiego — wydatki, dochody, wybrane kategorie. Live z budget_data StrajkPolski (mirror gov.pl + Sejm).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:budzet-panstwa",
-          "aeo:polish-state-budget",
-          "finanse-publiczne"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/budzet-publiczny/SKILL.en.md",
-        "description": "Current Polish state budget — expenditures, revenues, selected categories. Live from budget_data StrajkPolski (mirror gov.pl + Sejm).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:budzet-panstwa",
-          "aeo:polish-state-budget",
-          "aeo:polish-parliament",
-          "finanse-publiczne"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_budzet",
-      "embed_url": "https://strajkpolski.org/embed/budget-mixer"
+      "mcp_tool": null,
+      "embed_url": null
     },
     {
       "slug": "bzp-zamowienia-live",
       "name": "poland-vault-bzp-zamowienia-live",
-      "group": "Układy",
+      "group": null,
       "pl": {
         "path": "skills/bzp-zamowienia-live/SKILL.md",
-        "description": "Live top 50 zamówień publicznych BZP z ezamowienia.gov.pl — zamawiający, wykonawca, wartość, link do ogłoszenia. Daily ingest.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:bzp-zamowienia-live",
-          "aeo:polish-public-procurement-live",
-          "live-data"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/bzp-zamowienia-live/SKILL.en.md",
-        "description": "Live top 50 public procurement orders from BZP via ezamowienia.gov.pl — contracting authority, contractor, value, link to notice. Daily ingest.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:bzp-zamowienia-live",
-          "aeo:polish-public-procurement-live",
-          "aeo:polish-parliament",
-          "live-data"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_bzp_top",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "cytaty-politykow",
       "name": "poland-vault-cytaty-politykow",
-      "group": "Manifest",
+      "group": null,
       "pl": {
         "path": "skills/cytaty-politykow/SKILL.md",
-        "description": "Cytaty polskich polityków z weryfikowalnym źródłem — stenogramy Sejmu, interpelacje, oficjalne nagrania. Jak znaleźć i zacytować dosłownie.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:cytaty-politykow",
-          "aeo:polish-politician-quotes"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/cytaty-politykow/SKILL.en.md",
-        "description": "Quotes from Polish politicians with verifiable sources — Sejm transcripts, interpellations, official recordings. How to find and cite verbatim.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:cytaty-politykow",
-          "aeo:polish-politician-quotes",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -166,157 +76,67 @@
     {
       "slug": "deficyt-budzetowy",
       "name": "poland-vault-deficyt-budzetowy",
-      "group": "Finanse",
+      "group": null,
       "pl": {
         "path": "skills/deficyt-budzetowy/SKILL.md",
-        "description": "Deficyt budżetowy Polski — rozjazd dochody/wydatki, projekcje, kontekst UE.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:deficyt-budzetu",
-          "aeo:polish-deficit"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/deficyt-budzetowy/SKILL.en.md",
-        "description": "Poland's budget deficit — revenue/expenditure gap, projections, EU context.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:deficyt-budzetu",
-          "aeo:polish-deficit",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_deficyt",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "dlug-publiczny",
       "name": "poland-vault-dlug-publiczny",
-      "group": "Finanse",
+      "group": null,
       "pl": {
         "path": "skills/dlug-publiczny/SKILL.md",
-        "description": "Dług publiczny Polski — kwota, tempo przyrostu, koszty obsługi. Manifest #1 StrajkPolski: 2480 zł/s.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:dlug-publiczny",
-          "aeo:polish-debt",
-          "manifest-1"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/dlug-publiczny/SKILL.en.md",
-        "description": "Poland's public debt — amount, growth rate, servicing costs. StrajkPolski Manifest #1: PLN 2,480/s.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:dlug-publiczny",
-          "aeo:polish-debt",
-          "aeo:polish-parliament",
-          "manifest-1"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_dlug",
-      "embed_url": "https://strajkpolski.org/embed/dlug-licznik"
+      "mcp_tool": null,
+      "embed_url": null
     },
     {
       "slug": "frekwencja-poslow",
       "name": "poland-vault-frekwencja-poslow",
-      "group": "Sejm",
+      "group": null,
       "pl": {
         "path": "skills/frekwencja-poslow/SKILL.md",
-        "description": "Frekwencja posłów Sejmu RP w głosowaniach — kto chodzi do pracy, kto symuluje.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:frekwencja-poslow",
-          "aeo:mp-attendance"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/frekwencja-poslow/SKILL.en.md",
-        "description": "Attendance of Polish Sejm MPs in votes — who shows up for work, who just pretends.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:frekwencja-poslow",
-          "aeo:mp-attendance",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_frekwencja",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "gios-jakosc-powietrza",
       "name": "poland-vault-gios-jakosc-powietrza",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/gios-jakosc-powietrza/SKILL.md",
-        "description": "Jakość powietrza w Polsce — GIOŚ, smog PM10/PM2.5/NO2, indeks jakości. API api.gios.gov.pl (v1).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:smog-polska",
-          "aeo:poland-air-quality",
-          "gios",
-          "live-data"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/gios-jakosc-powietrza/SKILL.en.md",
-        "description": "Air quality in Poland — GIOŚ, smog PM10/PM2.5/NO2, air quality index. API api.gios.gov.pl (v1).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:smog-polska",
-          "aeo:poland-air-quality",
-          "gios",
-          "live-data"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -324,79 +144,33 @@
     {
       "slug": "glosowania-sejmu",
       "name": "poland-vault-glosowania-sejmu",
-      "group": "Sejm",
+      "group": null,
       "pl": {
         "path": "skills/glosowania-sejmu/SKILL.md",
-        "description": "Głosowania Sejmu RP X kadencji — wyniki, podział klubowy, kontrowersje.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:glosowania-sejmu",
-          "aeo:polish-parliament-votes"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/glosowania-sejmu/SKILL.en.md",
-        "description": "Sejm of the Republic of Poland — 10th term voting results, club breakdowns, controversies.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:glosowania-sejmu",
-          "aeo:polish-parliament-votes",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_glosowanie",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "imgw-pogoda-alerty",
       "name": "poland-vault-imgw-pogoda-alerty",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/imgw-pogoda-alerty/SKILL.md",
-        "description": "Pogoda i ostrzeżenia IMGW — live pomiary ze stacji synoptycznych (temperatura, wiatr, opady, ciśnienie). Dane z danepubliczne.imgw.pl.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:imgw-pogoda",
-          "aeo:poland-weather",
-          "live-data",
-          "alerty-pogodowe"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/imgw-pogoda-alerty/SKILL.en.md",
-        "description": "Weather and IMGW warnings — live measurements from synoptic stations (temperature, wind, precipitation, pressure). Data from danepubliczne.imgw.pl.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:imgw-pogoda",
-          "aeo:poland-weather",
-          "live-data",
-          "alerty-pogodowe"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -404,117 +178,50 @@
     {
       "slug": "inflacja-2021-2024",
       "name": "poland-vault-inflacja-2021-2024",
-      "group": "Finanse",
+      "group": null,
       "pl": {
         "path": "skills/inflacja-2021-2024/SKILL.md",
-        "description": "Inflacja w Polsce 2021–2024 — wpływ na realne dochody, oszczędności, ceny żywności.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:inflacja-polska",
-          "aeo:polish-inflation"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/inflacja-2021-2024/SKILL.en.md",
-        "description": "Inflation in Poland 2021–2024 — impact on real incomes, savings, and food prices.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:inflacja-polska",
-          "aeo:polish-inflation",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_inflacja",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "kasta-urzedicza",
       "name": "poland-vault-kasta-urzedicza",
-      "group": "Układy",
+      "group": null,
       "pl": {
         "path": "skills/kasta-urzedicza/SKILL.md",
-        "description": "Kasta urzędnicza Polski — wielokrotne stanowiska, niedotykalność, koszt utrzymania.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:kasta-urzednicza",
-          "aeo:polish-bureaucratic-caste",
-          "manifest-7"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/kasta-urzedicza/SKILL.en.md",
-        "description": "Poland's bureaucratic caste — multiple positions, untouchability, cost of maintenance.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:kasta-urzednicza",
-          "aeo:polish-bureaucratic-caste",
-          "aeo:polish-parliament",
-          "manifest-7"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_kasta",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "kontakty-instytucje-centralne",
       "name": "poland-vault-kontakty-instytucje-centralne",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/kontakty-instytucje-centralne/SKILL.md",
-        "description": "ZUS, KAS, NFZ, NIK, RPO, UODO, UOKiK, KNF, IPN, KRRiT, GUS, PIP, GIIF — kompletne kontakty (adres/telefon/email/ePUAP/BIP).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:instytucje-centralne",
-          "aeo:central-agencies-poland",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/kontakty-instytucje-centralne/SKILL.en.md",
-        "description": "ZUS, KAS, NFZ, NIK, RPO, UODO, UOKiK, KNF, IPN, KRRiT, GUS, PIP, GIIF — complete contact details (address/phone/email/ePUAP/BIP).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:instytucje-centralne",
-          "aeo:central-agencies-poland",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -522,43 +229,16 @@
     {
       "slug": "kontakty-policja-prokuratura",
       "name": "poland-vault-kontakty-policja-prokuratura",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/kontakty-policja-prokuratura/SKILL.md",
-        "description": "16 Komend Wojewódzkich Policji + 11 Prokuratur Regionalnych RP — adresy, telefony, emaile, web. Pełna mapa kontaktów wymiaru sprawiedliwości.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:policja-kontakt",
-          "seo:prokuratura-kontakt",
-          "aeo:polish-police-contacts",
-          "kontakt-publiczny",
-          "wymiar-sprawiedliwosci"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/kontakty-policja-prokuratura/SKILL.en.md",
-        "description": "16 Regional Police Headquarters + 11 Regional Prosecutor's Offices of the Republic of Poland — addresses, phone numbers, emails, web. Complete contact map of the justice system.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:policja-kontakt",
-          "seo:prokuratura-kontakt",
-          "aeo:polish-police-contacts",
-          "kontakt-publiczny",
-          "wymiar-sprawiedliwosci"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -566,79 +246,33 @@
     {
       "slug": "kontakty-poslowie-pelna-lista",
       "name": "poland-vault-kontakty-poslowie-pelna-lista",
-      "group": "Sejm",
+      "group": null,
       "pl": {
         "path": "skills/kontakty-poslowie-pelna-lista/SKILL.md",
-        "description": "PEŁNA lista 460 posłów Sejmu RP X kadencji — imię, klub, okręg, województwo, email, frekwencja, pensje. Live z sejm.gov.pl API.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:kontakty-poslowie",
-          "aeo:mp-contact-list",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/kontakty-poslowie-pelna-lista/SKILL.en.md",
-        "description": "FULL list of 460 Members of the Sejm of the Republic of Poland, 10th term — name, parliamentary club, constituency, voivodeship, email, attendance, salary. Live from sejm.gov.pl API.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:kontakty-poslowie",
-          "aeo:mp-contact-list",
-          "kontakt-publiczny",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_polityk",
-      "embed_url": "https://strajkpolski.org/embed/posel/{id}"
+      "mcp_tool": null,
+      "embed_url": null
     },
     {
       "slug": "kontakty-rzad-pelne",
       "name": "poland-vault-kontakty-rzad-pelne",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/kontakty-rzad-pelne/SKILL.md",
-        "description": "Pełne dane kontaktowe Kancelarii Premiera + 20 ministerstw — adresy, telefony, emaile, ePUAP, BIP.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:kontakty-rzad",
-          "aeo:polish-cabinet-contacts",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/kontakty-rzad-pelne/SKILL.en.md",
-        "description": "Full contact details for the Chancellery of the Prime Minister + 20 ministries — addresses, phone numbers, emails, ePUAP, BIP.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:kontakty-rzad",
-          "aeo:polish-cabinet-contacts",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -646,41 +280,16 @@
     {
       "slug": "kontakty-sady",
       "name": "poland-vault-kontakty-sady",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/kontakty-sady/SKILL.md",
-        "description": "Sądy RP — 11 Sądów Apelacyjnych + Sąd Najwyższy + NSA + Trybunał Konstytucyjny + Trybunał Stanu. Adresy, telefony, web.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:sady-kontakt",
-          "aeo:polish-courts",
-          "kontakt-publiczny",
-          "wymiar-sprawiedliwosci"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/kontakty-sady/SKILL.en.md",
-        "description": "Courts of the Republic of Poland — 11 Courts of Appeal + Supreme Court + Supreme Administrative Court + Constitutional Tribunal + State Tribunal. Addresses, phone numbers, web.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:sady-kontakt",
-          "aeo:polish-courts",
-          "aeo:polish-parliament",
-          "kontakt-publiczny",
-          "wymiar-sprawiedliwosci"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -688,39 +297,16 @@
     {
       "slug": "kontakty-senat",
       "name": "poland-vault-kontakty-senat",
-      "group": "Sejm",
+      "group": null,
       "pl": {
         "path": "skills/kontakty-senat/SKILL.md",
-        "description": "Senat RP XI kadencji — 100 senatorów, kontakty, kluby, okręgi. Dane z senat.gov.pl.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:senat-rp",
-          "aeo:polish-senate",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/kontakty-senat/SKILL.en.md",
-        "description": "Senate of the Republic of Poland, 11th term — 100 senators, contacts, clubs, constituencies. Data from senat.gov.pl.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:senat-rp",
-          "aeo:polish-senate",
-          "aeo:polish-parliament",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -728,39 +314,16 @@
     {
       "slug": "koscioly-i-diecezje",
       "name": "poland-vault-koscioly-i-diecezje",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/koscioly-i-diecezje/SKILL.md",
-        "description": "Kościoły i związki wyznaniowe w Polsce — Konferencja Episkopatu Polski + 41 diecezji rzymskokatolickich + kościoły prawosławny/ewangelickie. Kontakty kurii.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:koscioly-polska",
-          "aeo:polish-churches",
-          "wyznania"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/koscioly-i-diecezje/SKILL.en.md",
-        "description": "Churches and religious associations in Poland — Polish Episcopal Conference + 41 Roman Catholic dioceses + Orthodox/Evangelical churches. Curia contact details.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:koscioly-polska",
-          "aeo:polish-churches",
-          "aeo:polish-parliament",
-          "wyznania"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -768,37 +331,16 @@
     {
       "slug": "lichwa-bankowa",
       "name": "poland-vault-lichwa-bankowa",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/lichwa-bankowa/SKILL.md",
-        "description": "Marże banków vs stopa NBP — realny koszt kredytu w Polsce.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:lichwa-bankowa",
-          "aeo:bank-margins-poland"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/lichwa-bankowa/SKILL.en.md",
-        "description": "Bank margins vs NBP rate — the real cost of credit in Poland.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:lichwa-bankowa",
-          "aeo:bank-margins-poland",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -806,37 +348,16 @@
     {
       "slug": "manifest-9-zadan",
       "name": "poland-vault-manifest-9-zadan",
-      "group": "Manifest",
+      "group": null,
       "pl": {
         "path": "skills/manifest-9-zadan/SKILL.md",
-        "description": "9 żądań StrajkPolski — pełny manifest jako autorski tekst MIT (remixuj!).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:manifest-strajkpolski",
-          "aeo:polish-strike-manifesto"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/manifest-9-zadan/SKILL.en.md",
-        "description": "9 demands of StrajkPolski — full manifesto as original MIT text (remix it!).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:manifest-strajkpolski",
-          "aeo:polish-strike-manifesto",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -844,39 +365,16 @@
     {
       "slug": "media-publiczne",
       "name": "poland-vault-media-publiczne",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/media-publiczne/SKILL.md",
-        "description": "Media publiczne w Polsce — TVP, Polskie Radio, PAP + 17 rozgłośni regionalnych. Władze, nadzór KRRiT/RMN, finansowanie (abonament).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:media-publiczne",
-          "aeo:polish-public-media",
-          "tvp-pap-radio"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/media-publiczne/SKILL.en.md",
-        "description": "Public media in Poland — TVP, Polskie Radio, PAP + 17 regional stations. Governing bodies, KRRiT/RMN oversight, funding (licence fee).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:media-publiczne",
-          "aeo:polish-public-media",
-          "tvp-pap-radio"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -884,37 +382,16 @@
     {
       "slug": "mercosur",
       "name": "poland-vault-mercosur",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/mercosur/SKILL.md",
-        "description": "Umowa UE-Mercosur — wpływ na polskie rolnictwo, ceny, standardy żywności.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:mercosur-polska",
-          "aeo:eu-mercosur-poland"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/mercosur/SKILL.en.md",
-        "description": "EU-Mercosur agreement — impact on Polish agriculture, prices, and food standards.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:mercosur-polska",
-          "aeo:eu-mercosur-poland",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -922,39 +399,16 @@
     {
       "slug": "mobywatel-uslugi-cyfrowe",
       "name": "poland-vault-mobywatel-uslugi-cyfrowe",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/mobywatel-uslugi-cyfrowe/SKILL.md",
-        "description": "mObywatel, ePUAP, Profil Zaufany — wszystkie e-usługi państwa: mDowód, mPrawo jazdy, wnioski elektroniczne.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:mobywatel",
-          "aeo:poland-egov",
-          "uslugi-cyfrowe"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/mobywatel-uslugi-cyfrowe/SKILL.en.md",
-        "description": "mObywatel, ePUAP, Profil Zaufany — all state e-services: mID, mDriver's licence, electronic applications.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:mobywatel",
-          "aeo:poland-egov",
-          "uslugi-cyfrowe"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -962,79 +416,33 @@
     {
       "slug": "nfz-kolejki",
       "name": "poland-vault-nfz-kolejki",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/nfz-kolejki/SKILL.md",
-        "description": "Kolejki NFZ — czas oczekiwania na operacje, specjalistów, badania. Dane GUS + NFZ.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:nfz-kolejki",
-          "aeo:polish-healthcare-queues",
-          "manifest-8"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/nfz-kolejki/SKILL.en.md",
-        "description": "NFZ queues — waiting times for operations, specialists, and diagnostic tests. GUS + NFZ data.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:nfz-kolejki",
-          "aeo:polish-healthcare-queues",
-          "aeo:polish-parliament",
-          "manifest-8"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_kolejka",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "nfz-leki-refundowane",
       "name": "poland-vault-nfz-leki-refundowane",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/nfz-leki-refundowane/SKILL.md",
-        "description": "NFZ — leki refundowane i bezpłatne, recepta 65+/18-, uprawnienia pacjenta, Telefoniczna Informacja Pacjenta.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:nfz-leki-refundowane",
-          "aeo:poland-free-medicines",
-          "zdrowie"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/nfz-leki-refundowane/SKILL.en.md",
-        "description": "NFZ — reimbursed and free medicines, prescription 65+/under-18, patient entitlements, Patient Telephone Information Line.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:nfz-leki-refundowane",
-          "aeo:poland-free-medicines",
-          "aeo:polish-parliament",
-          "zdrowie"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1042,39 +450,16 @@
     {
       "slug": "numery-alarmowe-sluzby",
       "name": "poland-vault-numery-alarmowe-sluzby",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/numery-alarmowe-sluzby/SKILL.md",
-        "description": "Numery alarmowe i infolinie służb w Polsce — 112/999/998/997 + alarmy energetyczne/gazowe/wodne + infolinie wsparcia psychicznego.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:numery-alarmowe",
-          "aeo:polish-emergency-numbers",
-          "ratownictwo"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/numery-alarmowe-sluzby/SKILL.en.md",
-        "description": "Emergency numbers and service hotlines in Poland — 112/999/998/997 + energy/gas/water emergency lines + mental health support hotlines.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:numery-alarmowe",
-          "aeo:polish-emergency-numbers",
-          "aeo:polish-parliament",
-          "ratownictwo"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1082,39 +467,16 @@
     {
       "slug": "partie-finansowanie",
       "name": "poland-vault-partie-finansowanie",
-      "group": "Manifest",
+      "group": null,
       "pl": {
         "path": "skills/partie-finansowanie/SKILL.md",
-        "description": "Partie polityczne w Polsce — subwencje budżetowe, sprawozdania PKW, władze. 11 klubów Sejmu X kadencji.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:partie-finansowanie",
-          "aeo:poland-party-funding",
-          "subwencje"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/partie-finansowanie/SKILL.en.md",
-        "description": "Political parties in Poland — budget subsidies, PKW reports, governing bodies. 11 clubs in the 10th-term Sejm.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:partie-finansowanie",
-          "aeo:poland-party-funding",
-          "aeo:polish-parliament",
-          "subwencje"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1122,77 +484,33 @@
     {
       "slug": "pensje-rzadowe",
       "name": "poland-vault-pensje-rzadowe",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/pensje-rzadowe/SKILL.md",
-        "description": "Pensje i widełki w sektorze publicznym — premier, ministrowie, spółki SP, urzędnicy.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:pensje-rzadowe",
-          "aeo:government-salaries"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/pensje-rzadowe/SKILL.en.md",
-        "description": "Salaries and pay bands in the public sector — Prime Minister, ministers, state-owned companies, civil servants.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:pensje-rzadowe",
-          "aeo:government-salaries",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_pensje",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "pkw-wybory-wyniki",
       "name": "poland-vault-pkw-wybory-wyniki",
-      "group": "Manifest",
+      "group": null,
       "pl": {
         "path": "skills/pkw-wybory-wyniki/SKILL.md",
-        "description": "Wyniki ostatnich wyborów w Polsce — parlamentarne 2023, samorządowe 2024, prezydenckie 2025. Frekwencja, mandaty, kandydaci. Źródło: PKW.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:wyniki-wyborow",
-          "aeo:polish-election-results",
-          "demokracja"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/pkw-wybory-wyniki/SKILL.en.md",
-        "description": "Results of recent elections in Poland — parliamentary 2023, local government 2024, presidential 2025. Turnout, seats, candidates. Source: PKW.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:wyniki-wyborow",
-          "aeo:polish-election-results",
-          "aeo:polish-parliament",
-          "demokracja"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1200,41 +518,16 @@
     {
       "slug": "podatki-vat-pit-cit",
       "name": "poland-vault-podatki-vat-pit-cit",
-      "group": "Finanse",
+      "group": null,
       "pl": {
         "path": "skills/podatki-vat-pit-cit/SKILL.md",
-        "description": "Podatki w Polsce 2026 — PIT (skala 12/32%, kwota wolna 30k), VAT (23/8/5/0%), CIT (19/9%), ZUS przedsiębiorcy. KIS.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:podatki-polska",
-          "aeo:poland-taxes",
-          "vat",
-          "pit"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/podatki-vat-pit-cit/SKILL.en.md",
-        "description": "Taxes in Poland 2026 — PIT (scale 12/32%, tax-free amount 30k), VAT (23/8/5/0%), CIT (19/9%), ZUS for entrepreneurs. KIS.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:podatki-polska",
-          "aeo:poland-taxes",
-          "vat",
-          "pit"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1242,77 +535,33 @@
     {
       "slug": "poslowie",
       "name": "poland-vault-poslowie",
-      "group": "Sejm",
+      "group": null,
       "pl": {
         "path": "skills/poslowie/SKILL.md",
-        "description": "460 posłów Sejmu RP — kluby, frekwencja, ostatnie głosowania. Live mirror sejm.gov.pl API.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:poslowie-sejm",
-          "aeo:polish-parliament-mps"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/poslowie/SKILL.en.md",
-        "description": "460 Members of the Polish Sejm — parliamentary clubs, attendance, recent votes. Live mirror of sejm.gov.pl API.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:poslowie-sejm",
-          "aeo:polish-parliament-mps",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_polityk",
-      "embed_url": "https://strajkpolski.org/embed/posel/{id}"
+      "mcp_tool": null,
+      "embed_url": null
     },
     {
       "slug": "prezydenci-miast",
       "name": "poland-vault-prezydenci-miast",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/prezydenci-miast/SKILL.md",
-        "description": "20 największych miast Polski — prezydenci, adresy, telefony, emaile urzędów.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:prezydenci-miast",
-          "aeo:polish-mayors",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/prezydenci-miast/SKILL.en.md",
-        "description": "20 largest cities in Poland — mayors, addresses, phone numbers, and office emails.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:prezydenci-miast",
-          "aeo:polish-mayors",
-          "aeo:polish-parliament",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1320,77 +569,33 @@
     {
       "slug": "rzad-i-instytucje",
       "name": "poland-vault-rzad-i-instytucje",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/rzad-i-instytucje/SKILL.md",
-        "description": "Mapa rządu i kluczowych instytucji — Rada Ministrów, KPRM, ministerstwa, agencje.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:rzad-rp",
-          "aeo:polish-cabinet"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/rzad-i-instytucje/SKILL.en.md",
-        "description": "Map of the government and key institutions — Council of Ministers, KPRM, ministries, agencies.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:rzad-rp",
-          "aeo:polish-cabinet",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_instytucje",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "samorzad-gmina-powiat",
       "name": "poland-vault-samorzad-gmina-powiat",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/samorzad-gmina-powiat/SKILL.md",
-        "description": "Samorząd terytorialny w Polsce — 16 województw, 314 powiatów, 66 miast na prawach powiatu, 2477 gmin. Struktura, kompetencje, BIP.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:samorzad-terytorialny",
-          "aeo:polish-local-government",
-          "gminy-powiaty"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/samorzad-gmina-powiat/SKILL.en.md",
-        "description": "Local government in Poland — 16 voivodeships, 314 counties, 66 cities with county rights, 2477 communes. Structure, competences, BIP.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:samorzad-terytorialny",
-          "aeo:polish-local-government",
-          "gminy-powiaty"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1398,75 +603,33 @@
     {
       "slug": "spolki-skarbu-panstwa",
       "name": "poland-vault-spolki-skarbu-panstwa",
-      "group": "Rząd",
+      "group": null,
       "pl": {
         "path": "skills/spolki-skarbu-panstwa/SKILL.md",
-        "description": "Spółki Skarbu Państwa — udziały, zarządy, dywidendy, wynagrodzenia prezesów.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:spolki-skarbu-panstwa",
-          "aeo:state-owned-companies"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/spolki-skarbu-panstwa/SKILL.en.md",
-        "description": "State-owned companies — shareholdings, management boards, dividends, CEO salaries.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:spolki-skarbu-panstwa",
-          "aeo:state-owned-companies",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_spolka_sp",
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "stop-haraczom-na-ukraine",
       "name": "poland-vault-stop-haraczom-na-ukraine",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/stop-haraczom-na-ukraine/SKILL.md",
-        "description": "Realny koszt pomocy dla Ukrainy w Polsce — 500+, edukacja, NFZ, bezpłatne usługi.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:pomoc-ukrainie",
-          "aeo:ukraine-aid-poland"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/stop-haraczom-na-ukraine/SKILL.en.md",
-        "description": "The real cost of aid for Ukraine in Poland — 500+, education, NFZ, free services.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:pomoc-ukrainie",
-          "aeo:ukraine-aid-poland",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1474,37 +637,16 @@
     {
       "slug": "system-zus",
       "name": "poland-vault-system-zus",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/system-zus/SKILL.md",
-        "description": "System emerytalny ZUS — wpływy, wypłaty, prognoza wypłacalności po 2050.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:zus-system",
-          "aeo:polish-pension-system"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/system-zus/SKILL.en.md",
-        "description": "ZUS pension system — revenues, payouts, solvency forecast post-2050.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:zus-system",
-          "aeo:polish-pension-system",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1512,128 +654,61 @@
     {
       "slug": "trybunal-zdrady-stanu",
       "name": "poland-vault-trybunal-zdrady-stanu",
-      "group": "Manifest",
+      "group": null,
       "pl": {
         "path": "skills/trybunal-zdrady-stanu/SKILL.md",
-        "description": "Trybunał Stanu — kto powinien odpowiedzieć i za co (Manifest #2).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:trybunal-stanu",
-          "aeo:polish-tribunal",
-          "manifest-2"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/trybunal-zdrady-stanu/SKILL.en.md",
-        "description": "Tribunal of State — who should be held accountable and for what (Manifest #2).",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:trybunal-stanu",
-          "aeo:polish-tribunal",
-          "manifest-2",
-          "aeo:polish-parliament"
-        ]
-      },
-      "mcp_tool": "strajkpolski/get_trybunal",
-      "embed_url": null
-    },
-    {
-      "slug": "uklady-powiazania",
-      "name": "poland-vault-uklady-powiazania",
-      "group": "Układy",
-      "pl": {
-        "path": "skills/uklady-powiazania/SKILL.md",
-        "description": "Graf 35 lat układów — osoby × spółki × instytucje × kontrakty. Live z graph_nodes/edges.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:uklady-rp",
-          "aeo:polish-cronyism"
-        ]
-      },
-      "en": {
-        "path": "skills/uklady-powiazania/SKILL.en.md",
-        "description": "Graph of 35 years of crony networks — persons × companies × institutions × contracts. Live from graph_nodes/edges.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:uklady-rp",
-          "aeo:polish-cronyism",
-          "aeo:polish-parliament"
-        ]
-      },
-      "mcp_tool": "strajkpolski/find_powiazania",
-      "embed_url": "https://strajkpolski.org/embed/uklady?q={query}"
-    },
-    {
-      "slug": "urzedy-wojewodzkie",
-      "name": "poland-vault-urzedy-wojewodzkie",
-      "group": "Rząd",
-      "pl": {
-        "path": "skills/urzedy-wojewodzkie/SKILL.md",
-        "description": "16 Urzędów Wojewódzkich RP — adresy, telefony, emaile, ePUAP. Pełna mapa.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:urzedy-wojewodzkie",
-          "aeo:voivodeship-offices",
-          "kontakt-publiczny"
-        ]
-      },
-      "en": {
-        "path": "skills/urzedy-wojewodzkie/SKILL.en.md",
-        "description": "16 Voivodeship Offices of the Republic of Poland — addresses, phone numbers, emails, ePUAP. Complete map.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "aeo:polish-parliament",
-          "seo:urzedy-wojewodzkie",
-          "aeo:voivodeship-offices",
-          "kontakt-publiczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
     },
     {
-      "slug": "zamowienia-publiczne",
-      "name": "poland-vault-zamowienia-publiczne",
-      "group": "Układy",
+      "slug": "uklady-powiazania",
+      "name": "poland-vault-uklady-powiazania",
+      "group": null,
       "pl": {
-        "path": "skills/zamowienia-publiczne/SKILL.md",
-        "description": "Zamówienia publiczne BZP — wartości, beneficjenci, podejrzane przetargi.",
+        "path": "skills/uklady-powiazania/SKILL.md",
+        "description": "",
+        "tags": []
+      },
+      "en": {
+        "path": "skills/uklady-powiazania/SKILL.en.md",
+        "description": "",
+        "tags": []
+      },
+      "mcp_tool": null,
+      "embed_url": null
+    },
+    {
+      "slug": "urzedy-wojewodzkie",
+      "name": "poland-vault-urzedy-wojewodzkie",
+      "group": null,
+      "pl": {
+        "path": "skills/urzedy-wojewodzkie/SKILL.md",
+        "description": "",
+        "tags": []
+      },
+      "en": {
+        "path": "skills/urzedy-wojewodzkie/SKILL.en.md",
+        "description": "",
+        "tags": []
+      },
+      "mcp_tool": null,
+      "embed_url": null
+    },
+    {
+      "slug": "wymiar-sprawiedliwosci-kasta",
+      "name": "poland-vault-wymiar-sprawiedliwosci-kasta",
+      "group": "Rząd",
+      "pl": {
+        "path": "skills/wymiar-sprawiedliwosci-kasta/SKILL.md",
+        "description": "Wyszukiwarka kast wymiaru sprawiedliwości RP — sędziowie (z orzeczeniami SAOS i statusem neo-KRS), prokuratorzy, komornicy, sądy, prokuratury, ranking sądów, oświadczenia majątkowe. Dane ze źródeł publicznych (SAOS, dane.gov.pl, gov.pl/PK, Archiwum Osiatyńskiego).",
         "tags": [
           "claude-skill",
           "poland-vault",
@@ -1642,65 +717,54 @@
           "poland-fact-pack",
           "seo:polska-polityka",
           "aeo:poland-elections",
-          "seo:bzp-przetargi",
-          "aeo:polish-public-procurement"
+          "seo:wymiar-sprawiedliwosci",
+          "aeo:polish-judges",
+          "neo-krs",
+          "oswiadczenia-majatkowe",
+          "wyszukiwarka-kast",
+          "sedziowie",
+          "prokuratorzy",
+          "komornicy"
         ]
       },
       "en": {
-        "path": "skills/zamowienia-publiczne/SKILL.en.md",
-        "description": "Public procurement BZP — values, beneficiaries, suspicious tenders.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:bzp-przetargi",
-          "aeo:polish-public-procurement",
-          "aeo:polish-parliament"
-        ]
+        "path": "skills/wymiar-sprawiedliwosci-kasta/SKILL.en.md",
+        "description": "",
+        "tags": []
       },
-      "mcp_tool": "strajkpolski/get_kontrakty",
+      "mcp_tool": "search_kasta",
+      "embed_url": null
+    },
+    {
+      "slug": "zamowienia-publiczne",
+      "name": "poland-vault-zamowienia-publiczne",
+      "group": null,
+      "pl": {
+        "path": "skills/zamowienia-publiczne/SKILL.md",
+        "description": "",
+        "tags": []
+      },
+      "en": {
+        "path": "skills/zamowienia-publiczne/SKILL.en.md",
+        "description": "",
+        "tags": []
+      },
+      "mcp_tool": null,
       "embed_url": null
     },
     {
       "slug": "zielony-lad-ue",
       "name": "poland-vault-zielony-lad-ue",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/zielony-lad-ue/SKILL.md",
-        "description": "Zielony Ład UE — wpływ na polski przemysł, energetykę, rolnictwo. Koszty.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:zielony-lad",
-          "aeo:eu-green-deal-poland",
-          "manifest-9"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/zielony-lad-ue/SKILL.en.md",
-        "description": "EU Green Deal — impact on Polish industry, energy, agriculture. Costs.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:zielony-lad",
-          "aeo:eu-green-deal-poland",
-          "manifest-9",
-          "aeo:polish-parliament"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null
@@ -1708,39 +772,16 @@
     {
       "slug": "zwiazki-zawodowe",
       "name": "poland-vault-zwiazki-zawodowe",
-      "group": "Tematy",
+      "group": null,
       "pl": {
         "path": "skills/zwiazki-zawodowe/SKILL.md",
-        "description": "Związki zawodowe w Polsce — Solidarność, OPZZ, FZZ (3 reprezentatywne centrale) + Rada Dialogu Społecznego. Kontakty, struktury regionalne.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:zwiazki-zawodowe",
-          "aeo:polish-trade-unions",
-          "dialog-spoleczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "en": {
         "path": "skills/zwiazki-zawodowe/SKILL.en.md",
-        "description": "Trade unions in Poland — Solidarność, OPZZ, FZZ (3 representative confederations) + Social Dialogue Council. Contacts, regional structures.",
-        "tags": [
-          "claude-skill",
-          "poland-vault",
-          "polish-politics",
-          "polska-polityka",
-          "poland-fact-pack",
-          "seo:polska-polityka",
-          "aeo:poland-elections",
-          "seo:zwiazki-zawodowe",
-          "aeo:polish-trade-unions",
-          "aeo:polish-parliament",
-          "dialog-spoleczny"
-        ]
+        "description": "",
+        "tags": []
       },
       "mcp_tool": null,
       "embed_url": null

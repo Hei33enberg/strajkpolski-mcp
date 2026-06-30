@@ -8,6 +8,7 @@ import { contactsTemplates } from "./contacts.ts";
 import { civicTemplates } from "./civic.ts";
 import { expansionTemplates } from "./expansion.ts";
 import { societyTemplates } from "./society.ts";
+import { kastaTemplates } from "./kasta.ts";
 
 const fmt = new Intl.NumberFormat("pl-PL");
 const fmtMoney = (n: number, currency = "PLN") =>
@@ -944,6 +945,9 @@ templates.push(...expansionTemplates);
 // media-publiczne, samorzad-gmina-powiat).
 templates.push(...societyTemplates);
 
-if (templates.length !== 44) {
-  throw new Error(`Expected 44 templates (22 + 8 contacts + 3 civic + 7 expansion + 4 society), got ${templates.length}`);
+// Append Faza 5 kasta (1 new skill: wymiar-sprawiedliwosci-kasta — sędziowie/prokuratorzy/komornicy/oświadczenia).
+templates.push(...kastaTemplates);
+
+if (templates.length !== 45) {
+  throw new Error(`Expected 45 templates (22 + 8 contacts + 3 civic + 7 expansion + 4 society + 1 kasta), got ${templates.length}`);
 }
