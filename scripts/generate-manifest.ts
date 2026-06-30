@@ -79,7 +79,7 @@ const GROUP_EN: Record<string, string> = {
 
 async function main() {
   const args = parseArgs(process.argv);
-  const root = typeof args["out"] === "string" ? args["out"] : "../Poland-Vault";
+  const root = typeof args["out"] === "string" ? args["out"] : ".";
   const skillsDir = join(root, "skills");
 
   const dirs = await readdir(skillsDir);

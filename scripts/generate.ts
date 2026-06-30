@@ -61,7 +61,7 @@ async function main() {
   const args = parseArgs(process.argv);
   const dryRun = Boolean(args["dry-run"]);
   const only = typeof args["only"] === "string" ? args["only"] : null;
-  const outDir = typeof args["out"] === "string" ? args["out"] : "../Poland-Vault/skills";
+  const outDir = typeof args["out"] === "string" ? args["out"] : "./skills";
 
   const url = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
   const key = process.env.SUPABASE_PUBLISHABLE_KEY || process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
