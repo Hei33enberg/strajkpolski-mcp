@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@strajkpolski/mcp)](https://www.npmjs.com/package/@strajkpolski/mcp)
 [![license](https://img.shields.io/npm/l/@strajkpolski/mcp)](https://github.com/Hei33enberg/strajkpolski-mcp/blob/main/LICENSE)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
-[![tools](https://img.shields.io/badge/tools-15-green)]()
+[![tools](https://img.shields.io/badge/tools-25-green)]()
 [![data](https://img.shields.io/badge/data-CC--BY--4.0-orange)]()
 
 > **PL:** To Twoje pieniądze. Co roku oddajesz państwu połowę swojej pracy — a potem słyszysz, że „nie ma". Ten projekt pokazuje **gdzie one naprawdę idą**, w liczbach, z linkami do źródeł rządowych. Bez narracji telewizyjnej. Otwórz oczy.
@@ -51,9 +51,9 @@ The flashpoint: a **National Strike on 1 August 2026** — mass, conscious civil
 
 ## 🤖 Dlaczego MCP? / Why an MCP server?
 
-Bo **przyszłość wyszukiwania to agenty AI**. Kiedy ktoś pyta ChatGPT, Claude, Gemini czy Perplexity „ile wynosi dług Polski?" albo „jak głosował mój poseł?" — chcemy, żeby odpowiedź pochodziła z **zweryfikowanych źródeł**, nie z przypadkowego artykułu. Ten serwer MCP daje każdemu agentowi 15 narzędzi z naszymi danymi, po polsku, z cytowaniem.
+Bo **przyszłość wyszukiwania to agenty AI**. Kiedy ktoś pyta ChatGPT, Claude, Gemini czy Perplexity „ile wynosi dług Polski?" albo „jak głosował mój poseł?" — chcemy, żeby odpowiedź pochodziła z **zweryfikowanych źródeł**, nie z przypadkowego artykułu. Ten serwer MCP daje każdemu agentowi 25 narzędzi z naszymi danymi, po polsku, z cytowaniem.
 
-Because **the future of search is AI agents.** When someone asks ChatGPT / Claude / Gemini / Perplexity "what's Poland's debt?" or "how did my MP vote?", we want the answer to come from **verified sources** — not a random article. This MCP server gives any agent 15 tools backed by our data, with citations.
+Because **the future of search is AI agents.** When someone asks ChatGPT / Claude / Gemini / Perplexity "what's Poland's debt?" or "how did my MP vote?", we want the answer to come from **verified sources** — not a random article. This MCP server gives any agent 25 tools backed by our data, with citations.
 
 ## Instalacja / Install (Claude Code · Cursor · Windsurf · ChatGPT · Manus)
 
@@ -65,12 +65,12 @@ Because **the future of search is AI agents.** When someone asks ChatGPT / Claud
 }
 ```
 
-Wersja przypięta / pinned: `["-y", "@strajkpolski/mcp@0.3.3"]`. Bez instalacji / no install: REST pod `https://strajkpolski.org/api/`. Pełny kontekst dla LLM / full LLM context: `https://strajkpolski.org/llms.txt`.
+Wersja przypięta / pinned: `["-y", "@strajkpolski/mcp@0.4.1"]`. Bez instalacji / no install: REST pod `https://strajkpolski.org/api/`. Pełny kontekst dla LLM / full LLM context: `https://strajkpolski.org/llms.txt`.
 
 ### Remote MCP — ChatGPT connectors · Claude.ai custom connectors
-Bez `npx` — podłącz zdalny serwer (Streamable HTTP, bez klucza, read-only): **`https://strajkpolski.org/api/mcp`**. Wklej ten URL w ChatGPT (Connectors) lub Claude.ai (Custom connectors). / Paste this URL into ChatGPT Connectors or Claude.ai Custom connectors — no auth, 15 tools.
+Bez `npx` — podłącz zdalny serwer (Streamable HTTP, bez klucza, read-only): **`https://strajkpolski.org/api/mcp`**. Wklej ten URL w ChatGPT (Connectors) lub Claude.ai (Custom connectors). / Paste this URL into ChatGPT Connectors or Claude.ai Custom connectors — no auth, 25 tools.
 
-## 15 narzędzi / 15 tools
+## 25 narzędzi / 25 tools
 
 | Tool | PL | EN |
 |---|---|---|
@@ -83,6 +83,11 @@ Bez `npx` — podłącz zdalny serwer (Streamable HTTP, bez klucza, read-only): 
 | `search_cytaty` | Cytaty polityków (interpelacje/wystąpienia) | Politician quotes |
 | `ask_strajk` | Semantyczny search korpusu (RAG) | Semantic knowledge search (RAG) |
 | `get_manifest` / `get_skills` / `get_strajkujacy` | 9 postulatów · skille · licznik | 9 demands · skills · live counter |
+| `search_kasta` | Sędziowie/prokuratorzy/komornicy (filtry: role_type, voj, **neo_krs**) | Judges/prosecutors/bailiffs (neo-KRS filter) |
+| `get_sedzia` / `get_prokurator` / `get_komornik` / `get_syndyk` | Profil osoby: orzeczenia, nominacje, oświadczenia majątkowe | Person profile: rulings, appointments, asset declarations |
+| `get_sad` / `szukaj_komisariat` | Sąd/urząd: teleadres, ranking (office_type: sad/prokuratura/policja) | Court/office: address, ranking |
+| `ranking_sadow` | Ranking sądów wg gęstości sędziów neo-KRS | Court ranking by neo-KRS judge density |
+| `get_nominacje` / `get_oswiadczenia` | Nominacje (neo-KRS) · oświadczenia majątkowe (wartości + PDF) | Appointments (neo-KRS) · asset declarations |
 
 Wszystkie **read-only**, bez klucza, bez trackingu. Rate-limit 1000/h/IP.
 

@@ -289,11 +289,11 @@ const TOOLS: Tool[] = [
   },
   {
     name: "ranking_sadow",
-    description: "Ranking sądów wg metryk statystycznych ISWS (np. średni czas trwania postępowania, zaległości, wskaźnik opanowania). Filtry: metric, period (np. '2024'), level (szczebel). Cytuj: strajkpolski.org/kasta/ranking-sadow.",
+    description: "Ranking sądów. DOSTĘPNA metryka: 'neo_krs_sedziowie' (ranking sądów wg liczby sędziów powołanych przy neo-KRS — domyślna, live). Planowane ISWS: średni czas postępowania, zaległości. Filtry: metric, period, level (szczebel). Cytuj: strajkpolski.org/kasta/ranking-sadow.",
     inputSchema: {
       type: "object",
       properties: {
-        metric: { type: "string", description: "Metryka (np. 'avg_case_duration_days', 'backlog', 'clearance_rate')" },
+        metric: { type: "string", description: "Metryka — dostępne: 'neo_krs_sedziowie' (default, live). Planowane: 'avg_case_duration_days', 'backlog'.", default: "neo_krs_sedziowie" },
         period: { type: "string", description: "Okres (np. '2024' lub '2024-Q3')" },
         level: { type: "string", description: "Szczebel sądu (np. 'rejonowy', 'okregowy', 'apelacyjny')" },
         limit: { type: "number", description: "Max wyników (1-200, default 20)", default: 20 },
@@ -303,11 +303,12 @@ const TOOLS: Tool[] = [
   },
   {
     name: "szukaj_komisariat",
-    description: "Jednostki Policji (komendy/komisariaty) — dane teleadresowe. Filtry: q, voj (województwo), teryt. Wyłącznie dane jednostek (bez danych osobowych). Źródło: info.policja.pl. Cytuj: strajkpolski.org/kasta.",
+    description: "Wyszukiwarka URZĘDÓW (dane teleadresowe, bez danych osobowych): sądy, prokuratury, komisariaty. Użyj office_type, by szukać sądów ('sad') lub prokuratur ('prokuratura'); domyślnie 'policja'. Filtry: office_type, q, voj (województwo), teryt. Cytuj: strajkpolski.org/kasta.",
     inputSchema: {
       type: "object",
       properties: {
-        q: { type: "string", description: "Szukana fraza" },
+        office_type: { type: "string", description: "Typ urzędu: 'sad' | 'prokuratura' | 'policja' (default 'policja')", enum: ["sad", "prokuratura", "policja"] },
+        q: { type: "string", description: "Szukana fraza (nazwa/miasto)" },
         voj: { type: "string", description: "Województwo" },
         teryt: { type: "string", description: "Kod TERYT gminy/powiatu" },
         limit: { type: "number", description: "Max wyników (1-200, default 50)", default: 50 },
@@ -407,6 +408,7 @@ const RankingSadowSchema = z.object({
   limit: z.number().min(1).max(200).optional(),
 });
 const SzukajKomisariatSchema = z.object({
+  office_type: z.enum(["sad", "prokuratura", "policja"]).optional(),
   q: z.string().max(120).optional(),
   voj: z.string().max(40).optional(),
   teryt: z.string().max(20).optional(),
@@ -561,6 +563,7 @@ async function callTool(name: string, args: unknown): Promise<unknown> {
     case "szukaj_komisariat": {
       const a = SzukajKomisariatSchema.parse(args ?? {});
       const params = new URLSearchParams();
+      if (a.office_type) params.set("office_type", a.office_type);
       if (a.q) params.set("q", a.q);
       if (a.voj) params.set("voj", a.voj);
       if (a.teryt) params.set("teryt", a.teryt);
